@@ -1,7 +1,18 @@
----
-import Layout from "../layouts/Layout.astro"
----
+--- 
+import Layout from "../layouts/Layout.astro";
 
-<Layout title="Página principal">
-	<h1>Hola mundo</h1>
+// Componentes
+import Hero from "../components/landing/Hero.astro";
+import More from "../components/landing/More.astro";
+import Features from "../components/landing/Features.astro";
+import Projects from "../components/landing/Projects.astro";
+import About from "../components/landing/About.astro";
+--- 
+
+<Layout title="Acerca de">
+    <Hero/>
+    <More/>
+    <Features/>
+    <About/>
+    <Projects/>
 </Layout>
